@@ -5,7 +5,7 @@ if(isset($_POST['submit']))
 	
 	$uname=$_POST['username'];
 	$psswrd=$_POST['password'];
-	$sql = "SELECT * FROM user_registration where username='$uname' and password='$psswrd'";
+	$sql = "SELECT * FROM user_registration where Username='$uname' and Password='$psswrd'";
 	$result = mysqli_query($conn, $sql);
 
 	if (mysqli_num_rows($result) > 0)
@@ -47,7 +47,7 @@ else
               <a href="registration.php">New User?Sign Up</a><br>
                </div>
             <div class="input-container">
-                <button type="submit" class="login-btn">Login</button>
+                <input type="submit" name="submit" value="Login">
             </div>
 	</form>
 	</center>
