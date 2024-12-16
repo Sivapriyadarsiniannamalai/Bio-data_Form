@@ -22,24 +22,35 @@ else
 {
 ?>
 <html>
+  <head>
+     <title>User Registration</title>
+    <link rel="stylesheet" href="registrationstyle.css">
+  </head>
 	<body>
-	<center>
-		<form action="" method="post">
-		Firstname:
-		<input type="textbox" name="firstname"><br>
-		Lastname:
-		<input type="textbox" name="lastname"><br>
-		Contact Number:
-		<input type="textbox" name="contactnumber"><br>
-		Email:
-		<input type="textbox" name="mail"><br>
-		Username:
-		<input type="textbox" name="username"><br>
-		Password:
-		<input type="textbox" name="password"><br>
-		<input type="submit" name="submit" value="Submit"><br>
-	</form>
-	</center>
+	<div class="container">
+        <h2>User Registration</h2>
+        <form action="" method="post">
+            <label for="firstname">First Name:</label>
+            <input type="text" name="firstname" id="firstname" required><br>
+
+            <label for="lastname">Last Name:</label>
+            <input type="text" name="lastname" id="lastname" required><br>
+
+            <label for="contactnumber">Contact Number:</label>
+            <input type="text" name="contactnumber" id="contactnumber" required><br>
+
+            <label for="mail">Email:</label>
+            <input type="email" name="mail" id="mail" required><br>
+
+            <label for="username">Username:</label>
+            <input type="text" name="username" id="username" required><br>
+
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" required><br>
+
+            <input type="submit" name="submit" value="Register">
+        </form>
+    </div>
 	</body>
 </html>
 <?php

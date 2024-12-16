@@ -42,13 +42,16 @@ else
             <div class="input-container">
                 <label for="password">Password</label>
                 <input type="password" id="password" name="password" required>
-            </div>
-             <div>             
-              <a href="registration.php">New User?Sign Up</a><br>
-               </div>
+            <br>
+            <br>
             <div class="input-container">
                 <input type="submit" name="submit" value="Login">
             </div>
+           </div>
+             <div class ="input-container">             
+              <a href="registration.php">New User?Sign Up</a><br>
+               </div>
+            
 	</form>
 	</center>
 	</body>
